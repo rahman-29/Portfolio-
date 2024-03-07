@@ -1,0 +1,954 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Abdul Rahman Portfolio</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="C:\Users\Student\Downloads\IMG-20240306-WA0003.jpg" style="height: 4.5cm; border-radius: 20px; width: 4cm;" alt="Richard hanrick" >
+        </figure>
+        
+
+        <div class="info-content">
+          <h1 class="name" title="Richard hanrick">ABDUL RAHMAN S</h1>
+         
+
+          <p class="title"> developer</p>
+        </div>
+
+
+        
+        
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>View Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Certification</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Projects</button>
+          </li>
+
+           <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>blog</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contact</button>
+          </li>
+          
+
+        </ul>
+
+      </nav>
+
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+      <br>
+
+      <article class="about  active" data-page="about">
+        
+
+         
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            I'm Abdul Rahman,  pursed my college  education at Nehru institute of information and management .Throughout my academic journey,I completed my schooling at laurel hr and sec school , I have honed my computer skills, which includes 
+             expertise in Python, Data Base Mabagement System, Web Design.
+          </p>
+
+          <p>
+           
+          </p>
+        </section>
+
+
+        <!--
+          - service
+        -->
+
+        <section class="service">
+
+          <h3 class="h3 service-title">Passion</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-design.svg
+                " alt="design icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Web design</h4>
+
+                <p class="service-item-text">
+                  The most modern and high-quality design made at a professional level.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Web development</h4>
+
+                <p class="service-item-text">
+                  High-quality development of sites at the professional level.
+                </p>
+              </div>
+
+            </li>
+
+            
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/da.png" alt="camera icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Data Analytics</h4>
+
+                <p class="service-item-text">
+                  I can analyse high-volumes of data at a professional level.
+                </p>
+              </div>
+
+            </li>
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="data:image/png;base64,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" alt="camera icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Angular JS</h4>
+
+                <p class="service-item-text">
+                  I can use a structural framework for dynamic web apps.
+                </p>
+              </div>
+
+            </li>
+
+
+          </ul>
+
+        </section>
+
+
+        <!--
+          - testimonials
+        -->
+
+      
+               
+          
+               
+            
+          </ul>
+
+        </section>
+
+
+        <!--
+          - testimonials modal
+        -->
+
+        <div class="modal-container" data-modal-container>
+
+          <div class="overlay" data-overlay></div>
+
+          <section class="testimonials-modal">
+
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+            <div class="modal-img-wrapper">
+              <figure class="modal-avatar-box">
+                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
+              </figure>
+
+              <img src="./assets/images/icon-quote.svg" alt="quote icon">
+            </div>
+
+            <div class="modal-content">
+
+              <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
+
+              <time datetime="2021-06-14">14 June, 2021</time>
+
+              <div data-modal-text>
+                <p>
+                  
+              </div>
+
+            </div>
+
+          </section>
+
+        </div>
+
+
+        <!--
+          - clients
+        -->
+
+        
+
+      </article>
+
+
+
+
+
+      <!--
+        - #RESUME
+      -->
+
+      <article class="resume" data-page="resume">
+
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Education</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Nehru institute of information technology and management </h4>
+
+              <span>2023 — 2025</span>
+
+              <p class="timeline-text">
+                I am pursuing MCA 1s year .
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">M.I.E.T arts and science college</h4>
+
+              <span>2019 — 2022</span>
+
+              <p class="timeline-text">
+                I done UG degree B.sc computer science in trichy
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Laurel higher and secondary school</h4>
+
+              <span>2021 — 2024</span>
+
+              <p class="timeline-text">
+                I finishing my schooling in aranthangi
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Experience</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            
+            
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Fresher</h4>
+
+              
+
+              <p class="timeline-text">
+                As a fresher, I am actively searching for jobs in the IT field.
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="skill">
+
+          <h3 class="h3 skills-title">My skills</h3>
+
+          <ul class="skills-list content-card">
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Web design</h5>
+                <data value="80">80%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 80%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Data Analytics</h5>
+                
+                <data value="70">70%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 70%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5"> Data Visulization Python</h5>
+                <data value="90">90%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 90%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Data Base Management</h5>
+                <data value="50">50%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 50%;"></div>
+              </div>
+
+            </li>
+
+          </ul>
+
+
+        </section>
+
+        
+       
+
+      </article>
+
+
+
+
+
+      <!--
+        - #PORTFOLIO
+      -->
+
+      <article class="portfolio" data-page="certification">
+
+        <header>
+          <h2 class="h2 article-title">Certification</h2>
+        </header>
+
+        <section class="projects">
+
+          <ul class="filter-list">
+
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>IBM</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Cognitive Class</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Great Learning</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>simplilearn</button>
+            </li>
+
+          </ul>
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value>Select category</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+            <ul class="select-list">
+
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>IBM</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Cognitive Class</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Great Learning</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>simplilearn</button>
+              </li>
+
+
+            </ul>
+
+          </div>
+
+          <ul class="project-list">
+
+            <li class="project-item  active" data-filter-item data-category="great learning">
+              <a href="https://dtmvamahs40ux.cloudfront.net/ComplementaryCourseCertificate/1440833/original/ABDUL_RAHMAN_S20220808-24580-1jhn3h2.jpg">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  
+
+                  <img src="https://dtmvamahs40ux.cloudfront.net/ComplementaryCourseCertificate/1440833/original/ABDUL_RAHMAN_S20220808-24580-1jhn3h2.jpg">
+                </figure>
+
+               
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="great learning">
+              <a href="https://dtmvamahs40ux.cloudfront.net/ComplementaryCourseCertificate/1439901/original/Abdul_Rahman20220808-24580-1brhn2u.jpg">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="https://dtmvamahs40ux.cloudfront.net/ComplementaryCourseCertificate/1439901/original/Abdul_Rahman20220808-24580-1brhn2u.jpg">
+                </figure>
+
+            
+
+              </a>
+            </li>
+            <li class="project-item  active" data-filter-item data-category="great learning">
+              <a href="https://dtmvamahs40ux.cloudfront.net/ComplementaryCourseCertificate/1439485/original/Abdul_Rahman20220808-24580-1lkt2ci.jpg">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="https://dtmvamahs40ux.cloudfront.net/ComplementaryCourseCertificate/1439485/original/Abdul_Rahman20220808-24580-1lkt2ci.jpg">
+                </figure>
+
+                
+              </a>
+            </li>
+            
+            </li>
+            <li class="project-item  active" data-filter-item data-category="cognitive class">
+              <a href="E:\rahmann value  added course\Screenshot (3).png">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="E:\rahmann value  added course\Screenshot (3).png">
+                </figure>
+
+                <h3 class="project-title">Hadoop 101</h3>
+
+                <p class="project-category">Cognitive Class</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="simplilearn">
+              <a href="C:\Users\Student\Downloads\Screenshot 2024-03-05 at 11-08-50 3679523_1660023604.pdf.png">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="C:\Users\Student\Downloads\Screenshot 2024-03-05 at 11-08-50 3679523_1660023604.pdf.png">
+                </figure>
+
+              
+              </a>
+            </li>
+
+          
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #BLOG
+      -->
+
+      <article class="blog" data-page="projects">
+
+        <header>
+          <h2 class="h2 article-title">Projects</h2>
+        </header>
+
+        <section class="blog-posts">
+
+          <ul class="blog-posts-list">
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="data:image/jpeg;base64,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" alt="Design conferences in 2022" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">March 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Secure Document Parser</h3>
+
+                  <p class="blog-text">The project entitled ”SECURED DOCUMENT PARSER” a powerful web application for sharing,managing and controlling enterprise documents on internet and intranet in a secure manner.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="https://img.freepik.com/free-vector/creative-gradient-code-logo_23-2148820572.jpg?size=626&ext=jpg">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">feb 15, 2024</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">web page</h3>
+
+                  <p class="blog-text">The project entitled ”develope web page” a powerful web page for sharing,managing and controlling enterprise information on internet 
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+             <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSb0TULe0jUgbYOLtbgMm0dnBLq3_hZfoHQzg&usqp=CAU">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">feb 15, 2024</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">E-commerce</h3>
+
+                  <p class="blog-text">The project entitled ”develope e-commerce website” a powerful web page for sell product on internet 
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+           
+
+
+          
+          </ul>
+
+        </section>
+
+      </article>
+       <!--
+        - #BLOG
+      -->
+
+      <article class="blog" data-page="blog">
+
+        <header>
+          <h2 class="h2 article-title">Projects</h2>
+        </header>
+
+        <section class="blog-posts">
+
+          <ul class="blog-posts-list">
+
+
+      <li class="blog-post-item">
+              <a href="https://nammakkuenna.blogspot.com/2024/02/artificial-intelligence-introduction.html">
+
+                <figure class="blog-banner-box">
+                  <img src="https://blogger.googleusercontent.com/img/a/AVvXsEgTBJkhlRkIefXgPVQjoEdQjYqF3PGAZJTzaJRl_TMFe8QIylnmJOUqtS61JYmUwafESb1rkiJebGZudlesGc8b4YXCsP428KDMt9F6EkSpzzkeVinDIyYoteDJ5Kov90u5JLWYwKOiqAKMY5iOPfaav9xS86pUFZ3MVjApwyQysgdF0pPGnvUjd-YBfG8=w412-h193">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">feb 15, 2024</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">  Artificial Intelligence</h3>
+
+                  <p class="blog-text">Artificial Intelligence (AI) has emerged as a transformative force, reshaping the way we live, work, and interact with the world around us. Over the years, AI has evolved from a concept in science fiction to a critical driver of technological advancements. This article explores the intricacies of artificial intelligence, its applications, challenges, and the promising future it holds. 
+                  </p>
+
+                </div>
+                
+
+              </a>
+            </li>
+          </ul>
+        </section>
+      </article>
+
+
+
+
+
+      <!--
+        - #CONTACT
+      -->
+
+      <article class="contact" data-page="contact">
+
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+        <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="abdulrahmanz4932@gmail.com" class="contact-link">abdulrahmanz4932@gmail.com</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+
+              <a href="tel:+12133522795" class="contact-link">+91 7867044932</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Birthday</p>
+
+              <time datetime="1982-06-23">oct 29, 2001</time>
+            </div>
+
+          </li>
+
+       
+
+          <ul>
+         <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-twitter">twitter</ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://www.instagram.com/abdul95rahman?igsh=cGdiZ2dwdTRtN2ox">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://www.snapchat.com/add/abdulr20239282?share_id=1_cfqJ8oPGY&locale=en-US" class="social-link">
+              <ion-icon name="logo-snapchat">snapcaht</ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/abdul-rahman-64a520230?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+        </ul>
+        
+      
+
+       
+
+
+        
+
+        <section class="contact-form" style="margin-top: 5%;">
+
+          <h3 class="h3 form-title">Contact Form</h3>
+
+          <form action="#" class="form" data-form>
+
+            <div class="input-wrapper">
+              <input type="text" name="fullname" class="form-input" placeholder="Full name*" required data-form-input>
+
+              <input type="email" name="email" class="form-input" placeholder="Email address*" required data-form-input>
+            </div>
+
+            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+
+            <button class="form-btn" type="submit" disabled data-form-btn>
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Send Message</span>
+            </button>
+
+          </form>
+
+        </section>
+
+      </article>
+
+    </div>
+    <article class="socialmedia" data-page="socialmedia">
+
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+        <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+
+        <div class="separator"></div>
+
+        <ul class="social-list" style="margin-top: -3%;">
+
+          <li class="social-item">
+            <a href="https://www.facebook.com/profile.php?id=100009895247980&mibextid=ZbWKwL" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+         
+
+
+  </main>
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="E:\rahmann value  added course\Rahman\assets\js\script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
