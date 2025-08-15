@@ -356,7 +356,7 @@ main {
   font-size: var(--fs-8);
   font-weight: var(--fw-300);
   width: max-content;
-  padding:;
+  
   border-radius: 8px;
 }
 
@@ -1032,8 +1032,40 @@ main {
   font-weight: var(--fw-300);
 }
 
+/*-----------------------------------*\
+  #resume 
+\*-----------------------------------*/
+.resume-container {
+    width: 80%;
+    height: 90%;
+    background: white;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
 
+.resume-container iframe {
+    flex: 1;
+    border: none;
+}
 
+.download-btn {
+    display: block;
+    text-align: center;
+    padding: 12px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.download-btn:hover {
+    background-color: #0056b3;
+}
 
 
 /*-----------------------------------*\
@@ -1549,9 +1581,32 @@ textarea.form-input::-webkit-resizer { display: none; }
   .form-btn ion-icon { font-size: 18px; }
 
 }
+.social-item {
+  display: inline-block;
+}
 
+.social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: #222;  /* Circle background */
+  color: white;            /* Icon color */
+  font-size: 24px;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
 
+.social-link:hover {
+  background-color: #0077b5; /* Hover color */
+  transform: scale(1.1);     /* Slight zoom on hover */
+}
 
+.social-link ion-icon {
+  font-size: 24px; /* Icon size */
+}
 
 
 /**
